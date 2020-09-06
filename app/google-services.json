@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "307149025427",
+    "firebase_url": "https://doan3-6bae8.firebaseio.com",
+    "project_id": "doan3-6bae8",
+    "storage_bucket": "doan3-6bae8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:307149025427:android:0b49167eb51ba43b625d66",
+        "android_client_info": {
+          "package_name": "hqtrung.hqt.doan3real"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "307149025427-bki1jl6hd2ncb0emkrck1p2s4mifsv5h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-iH5bCrmSlJo7V3tRyfRcEQtvZnpzERU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "307149025427-bki1jl6hd2ncb0emkrck1p2s4mifsv5h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

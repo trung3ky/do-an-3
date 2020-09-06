@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorMan">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text="Bãi đỗ xe"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+        </androidx.appcompat.widget.Toolbar>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <EditText
+            android:id="@+id/EditTextSearch"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:background="@drawable/shadow_edittext_bottom"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_search_black_24dp"
+            android:hint="Nhập từ khóa tìm kiếm"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"/>
+        <TextView
+            android:padding="15dp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:text="Các bãi đỗ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/TextViewThongBao"
+            android:paddingTop="60dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/find"
+                android:layout_width="100dp"
+                android:layout_height="100dp"/>
+            <TextView
+                android:textSize="22sp"
+                android:gravity="center"
+                android:text="Không tìm thấy kết quả"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewBaiDoXe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>

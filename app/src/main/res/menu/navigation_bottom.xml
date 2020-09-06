@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Bãi đỗ xe"
+        android:enabled="true"
+        android:icon="@drawable/car"
+        android:id="@+id/Find" />
+
+    <item android:title="Trang chủ"
+        android:enabled="true"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:id="@+id/home" />
+
+    <item android:title="Tài khoản"
+        android:enabled="true"
+        android:icon="@drawable/ic_perm_identity_black_24dp"
+        android:id="@+id/More" />
+</menu>

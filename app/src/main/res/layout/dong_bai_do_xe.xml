@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="7dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="12dp"
+    android:background="@drawable/custom_dong_bai_do_xe"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/imageViewBaiDoXe"
+        android:layout_width="110dp"
+        android:layout_height="130dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.39" />
+
+    <TextView
+        android:id="@+id/textViewBaiDoXe"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:text="Mua tivi mỏng hư, vỡ màn hình"
+        android:textColor="#D3000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageViewBaiDoXe"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/place"
+        app:layout_constraintStart_toEndOf="@+id/imageViewBaiDoXe"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBaiDoXe" />
+
+    <TextView
+        android:lines="2"
+        android:id="@+id/TextViewDiaChi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Da Nag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBaiDoXe" />
+
+    <TextView
+        android:id="@+id/TextViewClock"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:drawableLeft="@drawable/clock"
+        android:drawablePadding="10dp"
+        android:text="6:00 - 22:00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewBaiDoXe"
+        app:layout_constraintTop_toBottomOf="@+id/TextViewDiaChi" />
+
+    <TextView
+        android:id="@+id/TextViewTrangThai"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="8dp"
+        android:drawableLeft="@drawable/car_16px"
+        android:drawablePadding="10dp"
+        android:text="9 vị trí còn trống"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewBaiDoXe" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
